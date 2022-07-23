@@ -6,7 +6,8 @@ namespace csharp_intermediary_challenges
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MethodsChallenge mc = new MethodsChallenge();
+            mc.run();
         }
     }
 }
