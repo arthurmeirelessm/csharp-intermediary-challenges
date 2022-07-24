@@ -15,9 +15,9 @@ namespace list_challenges
             lstAluno.Add(new Aluno { Nome = "Maria", Idade = 10 });
             lstAluno.Add(new Aluno { Nome = "Joao", Idade = 15 });
 
-            foreach (var pair in lstAluno.Select((x, i) => new { Index = i, Value = x }))
+            for(int i = 0; i < lstAluno.Count; i++)
             {
-                Console.WriteLine(pair.Value);
+                Console.WriteLine(lstAluno[i]);
             }
         }
     }

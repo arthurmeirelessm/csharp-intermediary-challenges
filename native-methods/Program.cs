@@ -51,17 +51,32 @@ namespace native_methods
             int[] copia = new int[arrayPPPP.Length];
             int numero = 2;
 
-            foreach(int item in array)
+            //IMPORTANTE //Index funcionou aqui
+            for( int i = 0; i < arrayPPPP.Length; i++ )
             {
-                Console.WriteLine(item);
+                arrayPPPP[i] = i;
+                Console.WriteLine(arrayPPPP);
             }
-
 
             //foreach (var pair in array.Select((x, i) => new { Index = i, Value = x }))
             //{
             //    Console.WriteLine(pair.Index);
             //}
 
+
+            //CONTAINS
+            int valor = 5;
+            var numeros = new List<int> { 4, 6, 56,5,4, 5, 65, 4,6, 7, 7};
+            var resultado = numeros.Contains(valor);
+            //Retorno: TRUE
+
+            Console.WriteLine(resultado);
+            foreach(int item in numeros)
+            {
+                numeros.Add(item);
+                Console.WriteLine(numeros);
+                Console.WriteLine("dgfbfb");
+            }
         }
     }
 }
