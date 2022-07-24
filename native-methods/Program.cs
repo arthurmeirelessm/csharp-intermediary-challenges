@@ -38,12 +38,12 @@ namespace native_methods
 
             //var listaLivros = new List<Livro>();
             // Inicializa o objeto e o inclui na coleção
-           // var livro1 = new Livro(1, "ASP, ADO e Banco de dados na web", "Macoratti", "8585943963");
+            // var livro1 = new Livro(1, "ASP, ADO e Banco de dados na web", "Macoratti", "8585943963");
             //listaLivros.Add(livro1);
             //var livro2 = new Livro(2, "ASP - Aprenda Rápido", "Macoratti", "8585845214");
-           // listaLivros.Add(livro2);
+            // listaLivros.Add(livro2);
 
-           // Console.WriteLine(listaLivros);
+            // Console.WriteLine(listaLivros);
 
 
             List<object> array = new List<object> { 1, 3, 5, 5, 5, 3, 5 };
@@ -52,7 +52,7 @@ namespace native_methods
             int numero = 2;
 
             //IMPORTANTE //Index funcionou aqui
-            for( int i = 0; i < arrayPPPP.Length; i++ )
+            for (int i = 0; i < arrayPPPP.Length; i++)
             {
                 arrayPPPP[i] = i;
                 Console.WriteLine(arrayPPPP);
@@ -64,19 +64,39 @@ namespace native_methods
             //}
 
 
-            //CONTAINS
+            //CONTAINS / Funciona como um includes
             int valor = 5;
-            var numeros = new List<int> { 4, 6, 56,5,4, 5, 65, 4,6, 7, 7};
+            var numeros = new List<int> { 4, 6, 56, 5, 4, 5, 65, 4, 6, 7, 7 };
             var resultado = numeros.Contains(valor);
             //Retorno: TRUE
 
-            Console.WriteLine(resultado);
-            foreach(int item in numeros)
+
+
+            //WHERE / Funciona como Filter
+            var artistas = new List<string> { "Bob Dylan", "Janis Japlin", "Gregg Allman", "Jim Morrison", "Madonna", "Jimmi Hendrix" };
+            var nome = "Jim Morrison";
+            var artistasComJ = artistas.Where((x) => x == nome).ToList();
+
+            foreach (string item in artistasComJ)
             {
-                numeros.Add(item);
-                Console.WriteLine(numeros);
-                Console.WriteLine("dgfbfb");
+                Console.WriteLine(item);
             }
+
+            //
+            string[] input = { "Brachiosaurus",
+                           "Amargasaurus",
+                           "Mamenchisaurus" };
+
+            List<string> dinosaurs = new List<string>(input);
+
+            Console.WriteLine("\nCapacity: {0}", dinosaurs.Capacity);
+
+            Console.WriteLine();
+            foreach (string dinosaur in dinosaurs)
+            {
+                Console.WriteLine(dinosaur);
+            }
+
         }
     }
 }
