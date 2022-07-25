@@ -94,17 +94,25 @@ namespace native_methods
             var valval = "Brachiosaurus";
             var filt = dinosaurs.Where(x => x == valval).ToList();
 
-            foreach(string item in filt)
+            foreach (string i in dinosaurs)
             {
-                Console.WriteLine(item);
+                Console.Write(i);
             }
 
-
-            //SELECT / Funciona como um map
+            //SELECT / Funciona como map
             var numeros2 = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             var resultado2 = numeros2.Select(x => x * x);
             foreach (var n in resultado2)
                 Console.WriteLine(n + " ");
+
+            //FIRST
+            int[] numbers = { 9, 34, 65, 92, 87, 435, 3, 54,
+                    83, 23, 87, 435, 67, 12, 19 };
+
+            var first = numbers.First(x => x < 10);
+
+            Console.WriteLine(first);
+
         }
     }
 }

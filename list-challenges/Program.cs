@@ -9,15 +9,19 @@ namespace list_challenges
     {
         static void Main(string[] args)
         {
-            var lstAluno = new List<Aluno>();
+            List<Aluno> lstAluno  = new List<Aluno>();
 
-            lstAluno.Add(new Aluno { Nome = "Jose", Idade = 20 });
-            lstAluno.Add(new Aluno { Nome = "Maria", Idade = 10 });
-            lstAluno.Add(new Aluno { Nome = "Joao", Idade = 15 });
+            lstAluno.Add(new Aluno() {Id = 1, Modelo = "Corsa", Marca = "Chevrolet", Preco = 29000});
+            lstAluno.Add(new Aluno() { Id = 2, Modelo = "Punto", Marca = "Fiat", Preco = 34000 });
+            lstAluno.Add(new Aluno() { Id = 3, Modelo = "Gol", Marca = "Volkswagen", Preco =23000 });
+            lstAluno.Add(new Aluno() { Id = 4, Modelo = "Saveiro", Marca = "Volkswagen", Preco = 26000 });
+            lstAluno.Add(new Aluno() { Id = 5, Modelo = "Uno", Marca = "Fiat", Preco = 16000 });
+            lstAluno.Add(new Aluno() { Id = 6, Modelo = "Velar", Marca = "Landrover", Preco =455000 });
 
-            for(int i = 0; i < lstAluno.Count; i++)
+
+            foreach (Aluno item in lstAluno)
             {
-                Console.WriteLine(lstAluno[i]);
+                Console.WriteLine(item.Marca);
             }
         }
     }

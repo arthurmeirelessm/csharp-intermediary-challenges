@@ -2,7 +2,15 @@
 {
     public class Aluno
     {
-        public string Nome { get; set; }
-        public int Idade { get; set;}
+        public int Id { get; set; }
+        public string Modelo { get; set;}
+        public string Marca { get; set; }
+        public double Preco { get; set; }
+
+
+        public override string ToString()
+        {
+            return "Id: " + Id + "   Modelo: " + Modelo + "   Marca: " + Marca + "   Preco: " + Preco;
+        }
     }
 }
