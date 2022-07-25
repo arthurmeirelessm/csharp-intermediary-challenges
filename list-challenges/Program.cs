@@ -19,9 +19,10 @@ namespace list_challenges
             lstAluno.Add(new Aluno() { Id = 6, Modelo = "Velar", Marca = "Landrover", Preco =455000 });
 
 
-            foreach (Aluno item in lstAluno)
+            foreach (var pair in lstAluno.Select((x, i) => new { Index = i, Value = x }))
             {
-                Console.WriteLine(item.Marca);
+                
+              
             }
         }
     }

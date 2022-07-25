@@ -113,6 +113,16 @@ namespace native_methods
 
             Console.WriteLine(first);
 
+
+            //ArrayPush / Funciona como push / Criado na outra classe
+            string[] table = { "apple", "orange" };
+
+            MethodsCreateds methodsCreateds = new MethodsCreateds();
+
+            methodsCreateds.ArrayPush(ref table, "banana");
+            Array.ForEach(table, x => Console.WriteLine(x));
+
+
         }
     }
 }
