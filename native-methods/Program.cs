@@ -82,21 +82,29 @@ namespace native_methods
                 Console.WriteLine(item);
             }
 
-            //
-            string[] input = { "Brachiosaurus",
-                           "Amargasaurus",
-                           "Mamenchisaurus" };
 
-            List<string> dinosaurs = new List<string>(input);
+            //ACOPLANDO VALORES DE ARRAY DENTRO DE UMA LISTA
+            string[] input = {"Brachiosaurus: Fraco",
+            "Amargasaurus: Forte",
+            "Mamenchisaurus: Forte" };
 
-            Console.WriteLine("\nCapacity: {0}", dinosaurs.Capacity);
+            var dinosaurs = new List<string>(input);
 
-            Console.WriteLine();
-            foreach (string dinosaur in dinosaurs)
+
+            var valval = "Brachiosaurus";
+            var filt = dinosaurs.Where(x => x == valval).ToList();
+
+            foreach(string item in filt)
             {
-                Console.WriteLine(dinosaur);
+                Console.WriteLine(item);
             }
 
+
+            //SELECT / Funciona como um map
+            var numeros2 = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var resultado2 = numeros2.Select(x => x * x);
+            foreach (var n in resultado2)
+                Console.WriteLine(n + " ");
         }
     }
 }
