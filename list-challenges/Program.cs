@@ -24,6 +24,11 @@ namespace list_challenges
                 
               
             }
+
+
+            var filt = lstAluno.Where(x => x.Marca == "Volkswagen" && x.Id <= 3);
+            foreach (var item in filt)
+                Console.WriteLine(item);
         }
     }
 }
