@@ -15,7 +15,7 @@ namespace CLassLibraryChallenges.Tests
             {
                 var sut = new MethodsChallenge();
 
-                var response = sut.FullNameMonth(4);
+                
 
 
             }
