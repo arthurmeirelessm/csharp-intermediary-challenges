@@ -20,7 +20,7 @@ namespace list_challenges
 
 
 
-            string value = "Garagem";
+            string value = "Gol";
 
 
             //SELECT = retorna ture ou false
@@ -29,20 +29,18 @@ namespace list_challenges
                 //Console.WriteLine(pair.Value.Modelo == value); 
             }
 
-            var filt = lstAluno.Where(x => x.Modelo == value);
+            var filt = lstAluno.Where(x => x.Modelo == value).Count();
              
             //WHERE = retorna o valor jun
-            foreach(var pair in filt)
+             if (filt == 0)
             {
-                if (var.isnu)
-                {
-                    Console.WriteLine("Pair not exits");
-                }
-                else
-                {
-                    Console.WriteLine(pair);
-                }
-                   
+                Console.WriteLine("Filt is not exists");
+            }
+             else
+            {
+                var list = lstAluno.Where(x => x.Modelo == value);
+                foreach(var item in list)
+                    Console.WriteLine(item);
             }
 
 

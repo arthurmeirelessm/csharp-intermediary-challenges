@@ -1,4 +1,6 @@
-﻿namespace native_methods
+﻿using System;
+
+namespace native_methods
 {
     public class Aluno
     {
@@ -11,6 +13,18 @@
         public override string ToString()
         {
             return "Id: " + Id + "   Modelo: " + Modelo + "   Marca: " + Marca + "   Preco: " + Preco;
+        }
+
+
+        public bool VerifyWhereLinq(object linqWhere)
+        {
+            if (linqWhere is null)
+            {
+                Console.WriteLine("Pair is null"); ;
+                return false;
+            }
+            Console.WriteLine(linqWhere);
+            return true;
         }
     }
 }
