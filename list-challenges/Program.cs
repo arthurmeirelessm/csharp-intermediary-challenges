@@ -19,16 +19,35 @@ namespace list_challenges
             lstAluno.Add(new Aluno() { Id = 6, Modelo = "Velar", Marca = "Landrover", Preco =455000 });
 
 
+
+            string value = "Garagem";
+
+
+            //SELECT = retorna ture ou false
             foreach (var pair in lstAluno.Select((x, i) => new { Index = i, Value = x }))
             {
-                
-              
+                //Console.WriteLine(pair.Value.Modelo == value); 
+            }
+
+            var filt = lstAluno.Where(x => x.Modelo == value);
+             
+            //WHERE = retorna o valor jun
+            foreach(var pair in filt)
+            {
+                if (var.isnu)
+                {
+                    Console.WriteLine("Pair not exits");
+                }
+                else
+                {
+                    Console.WriteLine(pair);
+                }
+                   
             }
 
 
-            var filt = lstAluno.Where(x => x.Marca == "Volkswagen" && x.Id <= 3);
-            foreach (var item in filt)
-                Console.WriteLine(item);
+
+
         }
     }
 }
