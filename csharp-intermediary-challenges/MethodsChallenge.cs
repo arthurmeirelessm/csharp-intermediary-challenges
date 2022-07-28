@@ -8,9 +8,13 @@ namespace csharp_intermediary_challenges
 {
     public class MethodsChallenge
     {
-        public void run()
+        //(1)
+       public string FullNameMonth (int month)
         {
-            Console.WriteLine("oi ola"); ;
+            DateTime date = new DateTime(2022, month, 1);
+
+            return date.ToString("MMMM");
         }
+
     }
 }
