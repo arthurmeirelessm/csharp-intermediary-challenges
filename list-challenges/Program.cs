@@ -9,14 +9,14 @@ namespace list_challenges
     {
         static void Main(string[] args)
         {
-            List<Aluno> lstAluno  = new List<Aluno>();
+            List<Aluno> lstAluno = new List<Aluno>();
 
-            lstAluno.Add(new Aluno() {Id = 1, Modelo = "Corsa", Marca = "Chevrolet", Preco = 29000});
+            lstAluno.Add(new Aluno() { Id = 1, Modelo = "Corsa", Marca = "Chevrolet", Preco = 29000 });
             lstAluno.Add(new Aluno() { Id = 2, Modelo = "Punto", Marca = "Fiat", Preco = 34000 });
-            lstAluno.Add(new Aluno() { Id = 3, Modelo = "Gol", Marca = "Volkswagen", Preco =23000 });
+            lstAluno.Add(new Aluno() { Id = 3, Modelo = "Gol", Marca = "Volkswagen", Preco = 23000 });
             lstAluno.Add(new Aluno() { Id = 4, Modelo = "Saveiro", Marca = "Volkswagen", Preco = 26000 });
             lstAluno.Add(new Aluno() { Id = 5, Modelo = "Uno", Marca = "Fiat", Preco = 16000 });
-            lstAluno.Add(new Aluno() { Id = 6, Modelo = "Velar", Marca = "Landrover", Preco =455000 });
+            lstAluno.Add(new Aluno() { Id = 6, Modelo = "Velar", Marca = "Landrover", Preco = 455000 });
 
 
 
@@ -30,21 +30,40 @@ namespace list_challenges
             }
 
             var filt = lstAluno.Where(x => x.Modelo == value).Count();
-             
+
             //WHERE = retorna o valor jun
-             if (filt == 0)
+            if (filt == 0)
             {
                 Console.WriteLine("Filt is not exists");
             }
-             else
+            else
             {
                 var list = lstAluno.Where(x => x.Modelo == value);
-                foreach(var item in list)
+                foreach (var item in list)
                     Console.WriteLine(item);
             }
 
 
+            //StartsWith
 
+            string str = "https://www.geeksforgeeks.org/placement-guide/";
+
+
+            var values = new string[]
+            {
+            "https://geeksforgeeks.org",
+            "https://www.geeksforgeeks.org",
+            "https://www.geeksforgeeks.org/placement"
+            };
+
+
+            foreach (var item in values)
+            {
+                if(str.StartsWith(item))
+                {
+                    Console.WriteLine(item);
+                }
+            }
 
         }
     }
