@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "native-methods", "native-me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "list-challenges", "list-challenges\list-challenges.csproj", "{58175BF7-E63C-44E9-B607-57EC9010325E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLassLibraryChallenges.Tests", "CLassLibraryChallenges.Tests\CLassLibraryChallenges.Tests.csproj", "{D078908E-ADD9-4871-A457-6FCBF2F89C0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengesTest", "ChallengesTest\ChallengesTest.csproj", "{7B10EC42-FD80-4C1B-88FF-C7D01F01E239}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{58175BF7-E63C-44E9-B607-57EC9010325E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58175BF7-E63C-44E9-B607-57EC9010325E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58175BF7-E63C-44E9-B607-57EC9010325E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D078908E-ADD9-4871-A457-6FCBF2F89C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D078908E-ADD9-4871-A457-6FCBF2F89C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D078908E-ADD9-4871-A457-6FCBF2F89C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D078908E-ADD9-4871-A457-6FCBF2F89C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B10EC42-FD80-4C1B-88FF-C7D01F01E239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B10EC42-FD80-4C1B-88FF-C7D01F01E239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B10EC42-FD80-4C1B-88FF-C7D01F01E239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B10EC42-FD80-4C1B-88FF-C7D01F01E239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
