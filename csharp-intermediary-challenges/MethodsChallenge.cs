@@ -20,5 +20,21 @@ namespace csharp_intermediary_challenges
 
             return date.ToString("MMMM");
         }
+
+        //(2) 
+        public object FindMinMax(int[] listOfNumbers)
+        {
+            Array.Sort(listOfNumbers);
+            for (int i = 0; i < listOfNumbers.Length; i++)
+            {
+               
+                    return listOfNumbers.ToList();
+           
+            }
+            return null;
+        }   
+
+        //(2)
+
     }
 }
