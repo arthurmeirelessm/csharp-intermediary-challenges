@@ -9,12 +9,16 @@ namespace csharp_intermediary_challenges
     public class MethodsChallenge
     {
         //(1)
-       public string FullNameMonth (int month)
+        public object FullNameMonth(int month)
         {
+            if (month > 12)
+            {
+                return 0;
+            }
+
             DateTime date = new DateTime(2022, month, 1);
 
             return date.ToString("MMMM");
         }
-
     }
 }

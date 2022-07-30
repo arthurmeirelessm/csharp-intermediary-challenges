@@ -12,7 +12,7 @@ namespace csharp_intermediary_challenges
             //if you're given 3 as input, your function should return
 
             MethodsChallenge challenge = new MethodsChallenge();
-            Console.WriteLine("Month name: " + challenge.FullNameMonth(4)); 
+            Console.WriteLine(challenge.FullNameMonth(13)); 
 
             //----------------------------------------------------------------------------------------------------------------------
 

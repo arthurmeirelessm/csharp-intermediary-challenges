@@ -7,7 +7,7 @@ namespace ChallengesTest
     public class ChallengeTests
     {
         [Fact]
-        public void FullNameMonthTest()
+        public void FullNameMonthTestSuccess()
         {
             //Arrange
             var value = "abril";
@@ -20,6 +20,20 @@ namespace ChallengesTest
             Assert.Equal(value, response);
 
 
+        }
+
+        [Fact]
+        public void FullNameMonthTestFail()
+        {
+            //Arrange
+            int value = 0;
+
+            //Act
+            MethodsChallenge methodChallenge = new MethodsChallenge();
+            var response = methodChallenge.FullNameMonth(45);
+
+            //Assert
+            Assert.Equal(value, response);
         }
     }
 }
