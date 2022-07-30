@@ -55,5 +55,21 @@ namespace ChallengesTest
             //Assert
             Assert.Equal(expected, response);
         }
+
+        [Fact]
+
+        public void FindMinMaxTestFail()
+        {
+            //Arrange
+            var valueOfarray = new int[] { 4 };
+            var expected = false;
+
+            //Act
+            MethodsChallenge methodsChallenge = new MethodsChallenge();
+            var response = methodsChallenge.FindMinMax(valueOfarray);
+
+            //Assert
+            Assert.Equal(expected, response);
+        }
     }
 }
