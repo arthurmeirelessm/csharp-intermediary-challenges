@@ -39,7 +39,13 @@ namespace csharp_intermediary_challenges
         }
 
 
-        //(2)
+        //(3)
+
+        public int AbsoluteSum(int[] numbers)
+        {  
+            int sum = numbers.Sum();
+            return sum;
+        }
 
     }
 }

@@ -19,8 +19,17 @@ namespace csharp_intermediary_challenges
 
             //(2) Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
 
-            int[] listOfNumbers = new int[] { 2 };
-            challenge.FindMinMax(listOfNumbers);
+            int[] listOfNumbers1 = new int[] { 2, 3, 5, 6, 7, 34};
+            Console.WriteLine(challenge.FindMinMax(listOfNumbers1));
+
+            //-------------------------------------------------------------------------------------------------------------------------
+
+            //(30) Take an array of integers (positive or negative or both) and return the sum of the absolute value of each element.
+
+
+            int[] listOfNumbers2 = new int[] { 3, 5 , 2 };
+            Console.WriteLine(challenge.AbsoluteSum(listOfNumbers2));
+
         }
     }
 }
