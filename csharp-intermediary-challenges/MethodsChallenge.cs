@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,17 +23,21 @@ namespace csharp_intermediary_challenges
         }
 
         //(2) 
-        public object FindMinMax(int[] listOfNumbers)
+        public bool FindMinMax(int[] listOfNumbers)
         {
             Array.Sort(listOfNumbers);
-            for (int i = 0; i < listOfNumbers.Length; i++)
+            if (listOfNumbers.Length < 2)
             {
-               
-                    return listOfNumbers.ToList();
-           
+                Console.WriteLine("This array must have more than two numbers");
+                return false;
             }
-            return null;
-        }   
+            foreach (int number in listOfNumbers)
+            {
+                Console.WriteLine(number);
+            }
+            return true;
+        }
+
 
         //(2)
 

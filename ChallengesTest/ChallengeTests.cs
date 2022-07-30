@@ -45,14 +45,15 @@ namespace ChallengesTest
         public void FindMinMaxTestSuccess()
         {
             //Arrange
-            var value = new int[] {4 , 6 , 5, 5, 6, 3, 3, 6};
+            var valueOfarray = new int[] {4 , 6 , 5, 5, 6, 3, 3, 6};
+            var expected = true;
 
             //Act
             MethodsChallenge methodChallenge = new MethodsChallenge();
-            var response = methodChallenge.FindMinMax(value);
+            var response = methodChallenge.FindMinMax(valueOfarray);
 
             //Assert
-            Assert.Equal(value, response);
+            Assert.Equal(expected, response);
         }
     }
 }

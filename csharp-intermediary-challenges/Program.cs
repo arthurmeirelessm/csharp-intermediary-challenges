@@ -19,7 +19,7 @@ namespace csharp_intermediary_challenges
 
             //(2) Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
 
-            int[] listOfNumbers = new int[] { 2, 5, 63, 6, 4, 3, 4, 89, 32, 56 };
+            int[] listOfNumbers = new int[] { 2 };
             challenge.FindMinMax(listOfNumbers);
         }
     }
