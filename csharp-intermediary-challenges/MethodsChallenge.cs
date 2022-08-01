@@ -23,29 +23,30 @@ namespace csharp_intermediary_challenges
         }
 
         //(2) 
-        public bool FindMinMax(int[] listOfNumbers)
+        public void FindMinMax(int[] listOfNumbers)
         {
             Array.Sort(listOfNumbers);
-            if (listOfNumbers.Length < 2)
-            {
-                Console.WriteLine("This array must have more than two numbers");
-                return false;
-            }
             foreach (int number in listOfNumbers)
             {
-                Console.WriteLine(number);
+                Console.WriteLine(number);  
             }
-            return true;
         }
 
 
         //(3)
 
         public int AbsoluteSum(int[] numbers)
-        {  
+        {
             int sum = numbers.Sum();
             return sum;
         }
 
+        //(4)
+        public object MultiplyByLength(int[] numbers)
+        {
+            var multiply = numbers.Select(x => x * numbers.Length);
+            multiply.ToList().ForEach(Console.WriteLine);
+            return numbers;
+        }
     }
 }
