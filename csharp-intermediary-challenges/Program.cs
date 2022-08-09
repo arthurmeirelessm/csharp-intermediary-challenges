@@ -34,9 +34,13 @@ namespace csharp_intermediary_challenges
 
             //(4) Create a function to multiply all of the values in an array by the amount of values in the given array
 
-            int[] listOfNumbers3 = new int[] { 3, 5, 5, 7 };
+            int[] listOfNumbers3 = new int[] { 3 };
             challenge.MultiplyByLength(listOfNumbers3);
-            
+
+            //(5) Create a function that accepts a string (of a person's first and last name) and returns a string with the first and last name swapped.
+
+            string[] listOfString1 = new string[] { "Butts Seymour" };
+            challenge.ShuffleTheName(listOfString1);
         }
     }
 }

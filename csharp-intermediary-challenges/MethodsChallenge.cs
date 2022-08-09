@@ -28,7 +28,7 @@ namespace csharp_intermediary_challenges
             Array.Sort(listOfNumbers);
             foreach (int number in listOfNumbers)
             {
-                Console.WriteLine(number);  
+                Console.WriteLine(number);
             }
         }
 
@@ -44,9 +44,21 @@ namespace csharp_intermediary_challenges
         //(4)
         public object MultiplyByLength(int[] numbers)
         {
-            var multiply = numbers.Select(x => x * numbers.Length);
-            multiply.ToList().ForEach(Console.WriteLine);
-            return numbers;
+            numbers.Select((x, i) => x * numbers.Length);
+            if (numbers.Any() && numbers.Length > 2)
+            {
+                numbers.ToList().ForEach(Console.WriteLine);
+                return numbers;
+            }
+            Console.WriteLine("Grup of numbers shouldly be larger that two");
+            return null;
+        }
+
+        //(5) 
+
+        public object ShuffleTheName(string[] value)
+        {
+            return Array.Reverse(value);
         }
     }
 }
